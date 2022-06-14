@@ -120,6 +120,7 @@ button {
 
 
 .card-section {
+  grid-row: 1/3;
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
   gap: 24px;
@@ -151,8 +152,48 @@ h3{
   grid-column: 2/3;
 }
 
+.announcement.card {
+  padding: 24px;
+}
+
+.announcement-text {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+hr {
+  border: rgb(222, 221, 221) solid 0.5px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .trendings {
   grid-column: 2/3;
+}
+
+.trending.card {
+  padding: 16px;
+}
+
+.trending-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+}
+
+.user-tag {
+  font-size: 0.9rem;
+  padding-bottom: 4px;
+}
+
+.user-title {
+  color: gray;
+  font-size: 0.9rem;
 }
 
 /* Sidebar */
