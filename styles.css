@@ -211,9 +211,11 @@ hr {
 
 .sidebar-logo {
   display: flex;
-  gap: 6px;
-  padding-left: 30px;
+  align-items: center;
+  gap: 24px;
+  padding-left: 18px;
   padding-right: 20px;
+  padding-bottom: 24px;
 }
 
 .sidebar h1{
@@ -224,12 +226,16 @@ ul {
   display: grid;
   grid-template-columns: 40px 1fr;
   align-items: center;
-  gap: 4px;
+  gap: 16px;
   padding-left: 30px;
 }
 
 li {
   list-style: none;
   font-weight: bold;
+}
+
+.sidebar-preferences {
+  padding-top: 32px;
 }
 
