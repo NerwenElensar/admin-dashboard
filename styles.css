@@ -1,3 +1,20 @@
 * {
-	background-color: brown;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	grid-template-rows: 12% 87%;
+}
+
+.main-content {
+	background-color: lightgray;
+	grid-column: 2;
+}
+
+nav {
+	background-color: skyblue;
+	grid-row: 1/3;
 }
