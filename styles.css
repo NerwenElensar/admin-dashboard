@@ -6,7 +6,7 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: minmax(200px, 15%) 85%;
-	grid-template-rows: 24% 76%;
+	grid-template-rows: 20% 80%;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -15,11 +15,14 @@ body {
 	grid-column: 2;
 }
 
+/*--------------------HEADER-----------------------------------*/
+
 header {
 	display: grid;
 	grid-template-rows: 40% 60%;
-	gap: 1rem;
-	margin: 0.5rem 2rem;
+	padding: 0 2rem;
+	z-index: 0;
+	box-shadow: 0 4px 9px darkgray;
 }
 
 .upper-header {
@@ -28,10 +31,18 @@ header {
 	flex-shrink: 0;
 }
 
+.upper-header .material-icons {
+	font-size: 1.3rem;
+}
+
 .searchbar-section, .login-info {
 	display: flex;
 	gap: 16px;
 	align-items: center;
+}
+
+.login-info {
+	gap: 32px;
 }
 
 input[type='search'] {
@@ -42,19 +53,58 @@ input[type='search'] {
 	height: 1.25rem;
 }
 
+.lower-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.greetings-section {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.button-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.5rem;
+}
+
+.login-name {
+	margin-top: 6px;
+}
+
 .avatar-small {
-	height: 32px;
+	height: 40px;
+}
+
+.avatar-big {
+	height: 64px;
+}
+
+button {
+	border-radius: 16px;
+	border-style: none;
+	background-color: rgb(16, 144, 207);
+	color: white;
+	padding: 8px 24px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
 }
 
 h4 {
-	font-size: 0.8rem;
+	font-size: 0.85rem;
 }
+/*--------------------Side Navbar-----------------------------------*/
 
 nav {
 	background-color: rgb(16, 144, 207);
 	color: white;
 	grid-row: 1/3;
 	font-weight: 600;
+	z-index: 1;
 }
 
 .material-icons {
